@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual env
+.env/
+.venv/
+
+# Model + cache directories (user will populate)
+models/
+!models/.keep
+
+# Temporary runtime outputs
+/tmp/
+*.wav
+*.mp4
+
+# Jupyter
+*.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Embedded repositories
+SadTalker/
+
+# Personal data files (users should add their own)
+data/pope_face.jpg
+data/pope_ref.wav
