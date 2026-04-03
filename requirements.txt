@@ -1,8 +1,0 @@
-faster-whisper>=1.0.0            # Streaming STT
-sounddevice>=0.4.6               # Mic capture
-TTS>=0.20.0                      # XTTS-v2 voice cloning (compatible with Python 3.13)
-gradio>=4.0.0                    # Simple UI
-torch>=2.0.0                     # Core DL
-transformers>=4.30.0             # TinyLlama chat model
-sentencepiece>=0.1.99            # Tokenizer dep
-soundfile>=0.12.1                # Write wav
