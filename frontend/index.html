@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EternalBots.ai — Digitally preserve the conversational essence of your loved ones through AI-powered avatars.">
+    <title>EternalBots.ai — Digital Legacy Preservation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- LANDING / PERSONA SELECT VIEW                   -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <div id="landing-view" class="view active">
+        <div class="landing-container">
+            <div class="brand">
+                <div class="brand-icon">✦</div>
+                <h1 class="brand-title">EternalBots<span class="brand-dot">.ai</span></h1>
+                <p class="brand-subtitle">Preserve the essence of those you love</p>
+            </div>
+
+            <div id="personas-grid" class="personas-grid">
+                <!-- Persona cards rendered here by JS -->
+            </div>
+
+            <button id="btn-create-persona" class="btn btn-primary btn-glow" onclick="showView('create-view')">
+                <span class="btn-icon">+</span>
+                Create New Memory
+            </button>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- CREATE PERSONA VIEW                             -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <div id="create-view" class="view">
+        <div class="create-container">
+            <button class="btn-back" onclick="showView('landing-view')">← Back</button>
+            <h2 class="section-title">Begin a New Memory</h2>
+            <p class="section-desc">Tell us about the person you want to remember</p>
+
+            <form id="create-form" class="create-form" onsubmit="return handleCreatePersona(event)">
+                <div class="form-group">
+                    <label for="persona-name">Their Name</label>
+                    <input type="text" id="persona-name" placeholder="e.g. Grandpa Rajpoot" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="persona-relationship">Your Relationship</label>
+                    <input type="text" id="persona-relationship" placeholder="e.g. My grandfather, my best friend">
+                </div>
+
+                <div class="form-group">
+                    <label for="persona-description">A Brief Description</label>
+                    <textarea id="persona-description" rows="3" placeholder="Tell us who they were — their spirit, what made them special..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="persona-voice">Choose a Voice</label>
+                    <select id="persona-voice">
+                        <optgroup label="Male Voices">
+                            <option value="en-US-GuyNeural">Guy (US Male, warm)</option>
+                            <option value="en-US-DavisNeural">Davis (US Male, deep)</option>
+                            <option value="en-GB-RyanNeural">Ryan (British Male)</option>
+                            <option value="en-IN-PrabhatNeural">Prabhat (Indian Male)</option>
+                            <option value="en-AU-WilliamNeural">William (Australian Male)</option>
+                            <option value="en-US-TonyNeural">Tony (US Male, older)</option>
+                            <option value="en-US-JasonNeural">Jason (US Male, calm)</option>
+                        </optgroup>
+                        <optgroup label="Female Voices">
+                            <option value="en-US-JennyNeural">Jenny (US Female)</option>
+                            <option value="en-US-AriaNeural">Aria (US Female, expressive)</option>
+                            <option value="en-GB-SoniaNeural">Sonia (British Female)</option>
+                            <option value="en-IN-NeerjaNeural">Neerja (Indian Female)</option>
+                            <option value="en-AU-NatashaNeural">Natasha (Australian Female)</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-glow" id="btn-create-submit">
+                    Create Memory ✦
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- UPLOAD DATA VIEW                                -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <div id="upload-view" class="view">
+        <div class="upload-container">
+            <button class="btn-back" onclick="showView('landing-view')">← Back</button>
+            <h2 class="section-title">Feed Their Memories</h2>
+            <p class="section-desc" id="upload-persona-name">Upload photos, audio, documents — anything that captures who they were</p>
+
+            <div id="drop-zone" class="drop-zone" ondrop="handleDrop(event)" ondragover="event.preventDefault(); this.classList.add('drag-over')" ondragleave="this.classList.remove('drag-over')">
+                <div class="drop-zone-icon">📁</div>
+                <p class="drop-zone-text">Drag & drop files here</p>
+                <p class="drop-zone-hint">Photos • Audio • Text documents • Artifacts</p>
+                <input type="file" id="file-input" multiple accept="image/*,audio/*,.txt,.md,.doc,.docx,.pdf" onchange="handleFileSelect(event)" hidden>
+                <button class="btn btn-secondary" onclick="document.getElementById('file-input').click()">
+                    Browse Files
+                </button>
+            </div>
+
+            <div id="upload-progress" class="upload-progress" style="display:none;">
+                <!-- Upload progress items rendered here -->
+            </div>
+
+            <div id="uploaded-files-list" class="uploaded-files-list">
+                <!-- Uploaded files rendered here -->
+            </div>
+
+            <div class="manual-fact-section">
+                <h3>Or type facts directly</h3>
+                <div class="manual-fact-input">
+                    <input type="text" id="manual-fact" placeholder="e.g. He was born in 1945 in Jaipur">
+                    <button class="btn btn-secondary" onclick="addManualFact()">Add Fact</button>
+                </div>
+            </div>
+
+            <button class="btn btn-primary btn-glow" onclick="startChatting()">
+                Start Talking ✦
+            </button>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- CHAT VIEW                                       -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <div id="chat-view" class="view">
+        <div class="chat-layout">
+            <!-- Avatar Panel -->
+            <div class="avatar-panel">
+                <button class="btn-back" onclick="showView('landing-view')" style="position:absolute;top:16px;left:16px;z-index:10;">← Back</button>
+
+                <div class="avatar-container" id="avatar-container">
+                    <div class="avatar-glow" id="avatar-glow"></div>
+                    <div class="avatar-frame" id="avatar-frame">
+                        <img id="avatar-img" src="" alt="Avatar" class="avatar-img">
+                        <div class="avatar-overlay" id="avatar-overlay"></div>
+                    </div>
+                    <div class="avatar-name" id="avatar-name">Loading...</div>
+                    <div class="avatar-status" id="avatar-status">
+                        <span class="status-dot"></span>
+                        <span id="status-text">Online</span>
+                    </div>
+                </div>
+
+                <!-- Audio Waveform -->
+                <div class="waveform-container" id="waveform-container">
+                    <canvas id="waveform-canvas" width="300" height="60"></canvas>
+                </div>
+
+                <!-- Memory Stats -->
+                <div class="memory-stats" id="memory-stats">
+                    <div class="stat">
+                        <span class="stat-value" id="facts-count">0</span>
+                        <span class="stat-label">Facts Known</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="traits-count">0</span>
+                        <span class="stat-label">Traits Learned</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Panel -->
+            <div class="chat-panel">
+                <div class="chat-messages" id="chat-messages">
+                    <div class="chat-welcome" id="chat-welcome">
+                        <p class="welcome-text">Start a conversation...</p>
+                        <p class="welcome-hint">Speak or type below. Help them remember who they are.</p>
+                    </div>
+                </div>
+
+                <div class="chat-input-area">
+                    <button class="btn-mic" id="btn-mic" onclick="toggleVoiceInput()">
+                        🎤
+                    </button>
+                    <input type="text" id="chat-input" placeholder="Type a message..." onkeydown="if(event.key==='Enter')sendMessage()">
+                    <button class="btn-send" id="btn-send" onclick="sendMessage()">
+                        ➤
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio player (hidden) -->
+    <audio id="audio-player" style="display:none;"></audio>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>

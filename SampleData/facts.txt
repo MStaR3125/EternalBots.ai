@@ -1,0 +1,213 @@
+﻿   
+
+Contact Akshat Thakur
+akshatthakur.official@gmail
+.com Associate Solutions Engineer @ Indus Valley Partners (IVP)
+
+Delhi, India
+www.linkedin.com/in/
+akshatthakurofficial (LinkedIn)
+leetcode.com/1AkshatThakur1/ Summary
+(Other)
+github.com/1AkshatThakur1 As a Computer Science junior at Sharda University specializing
+(Other) in Data Science and Analytics, I see myself as a problem-solver
+
+at heart, always seeking to translate complex data into clear,
+Top Skills actionable insights. My journey is marked by a drive to explore
+C (Programming Language) new technologies, challenge the status quo, and contribute to the
+Databases tech community. Whether it’s through open-source contributions,
+Client Relations innovative data projects, or collaborative team efforts, I thrive in
+
+environments that push boundaries and foster growth.
+Languages
+Hindi (Native or Bilingual) Beyond data and code, I am deeply passionate about music. Playing
+English (Full Professional) the guitar allows me to explore new rhythms and melodies, fueling
+
+my creativity and offering a fresh perspective on my work. Music
+Certifications keeps me grounded, inspires my thinking, and adds a dynamic layer
+Developer Learning Plan to my approach to technology.
+Rock & Pop Guitar Grade 2 
+Rock & Pop Guitar Grade 6
+Deloitte - Data Analytics Job
+Simulation Experience
+Database Foundations Indus Valley Partners
+
+Associate Solutions Engineer
+Honors-Awards October 2025 - Present (6 months)
+Runner-Up at Instrumentally Event at Noida, Uttar Pradesh, India
+Chorus 2K23 Supporting IVP Security Master, an enterprise-grade securities data
+
+management platform used by global hedge funds and investment banking
+firms.
+
+• Provide production and application support across PROD, UAT, and DEV
+environments, ensuring timely resolution within defined turnaround timelines
+(TOT)
+• Investigate client-reported incidents through detailed log analysis, Windows
+Event Viewer review, and system-level diagnostics to identify root causes
+• Act as the primary liaison between clients and Product/Engineering teams for
+escalations, defect tracking, and enhancement requests
+
+  Page 1 of 5
+
+
+
+   
+
+• Deploy license upgrades, hotfixes, and configuration changes; conduct post-
+deployment sanity checks to ensure environment stability
+• Execute SQL queries on read-only databases to retrieve and validate data for
+client requests, reconciliations, and internal audit requirements
+• Manage ongoing support and system reliability for a portfolio of 15+
+institutional clients
+• Maintain SLA compliance through structured stakeholder communication and
+proactive issue lifecycle management
+
+Zuno by foundit
+Zuno Community Captain
+May 2024 - May 2025 (1 year 1 month)
+• Representing the Zuno community on the university campus.
+• Social Media Advertisement and Promotion.
+
+Extern
+5 months
+Ambassador
+October 2024 - December 2024 (3 months)
+
+Consumer Insights and Market Intelligence Extern
+August 2024 - September 2024 (2 months)
+During my externship with Beats by Dr. Dre, a leading global brand known for
+its premium audio products, I contributed to the Consumer Insights and Market
+Intelligence division. My role involved conducting in-depth consumer research,
+particularly focusing on Gen Z perceptions and behaviors towards the Beats
+brand.
+
+• Get familiarized with Beats by Dr. Dre's vision, mission, and brand
+philosophy.
+• Learn about the terms and concepts in branding and marketing
+• Conducted consumer trends research, focusing on the audio industry and
+GenZ behaviors, identifying driving factors.
+• Analyze Beats brand positioning and compare it to competitors
+• Executed end-to-end consumer research; from scoping to data analysis and
+participant engagement.
+• Developed interpersonal skills and public speaking prowess, effectively
+presenting findings to live remote audiences with clarity.
+
+Agnirva.com Space Community
+  Page 2 of 5
+
+
+
+   
+
+7 months
+Campus Ambassador
+August 2024 - December 2024 (5 months)
+
+The Agnirva Space Internship Program
+June 2024 - August 2024 (3 months)
+• Studied key case studies in space exploration
+• Analyzed historical developments in space technology
+• Gained insights into space industry practices
+
+Orinson Technologies Private Limited
+Machine Learning Intern
+August 2024 - September 2024 (2 months)
+During my internship, I completed four hands-on machine learning projects,
+each contributing to enhancing my skills in data processing, model building,
+and analysis:
+
+• Week 1: Object Detection in Images
+Developed an object detection model using deep learning techniques, working
+with image datasets to accurately detect and label objects in various scenes.
+Applied techniques like convolutional neural networks (CNNs) and fine-tuned
+pre-trained models for improved accuracy.
+
+• Week 2: Songs Data Analysis
+Performed in-depth analysis of a comprehensive music dataset, exploring
+patterns and trends in song features. Used Python and machine learning
+libraries to analyze factors such as tempo, loudness, and genre correlations,
+providing insights into what makes songs popular across different eras.
+
+• Week 3: Basic Machine Learning Model
+Built a simple predictive machine learning model to forecast outcomes using
+regression techniques. Preprocessed the dataset, handled missing values,
+and normalized features. Trained models like Linear Regression and Decision
+Trees, evaluating them using metrics such as mean squared error.
+
+• Week 4: Student Performance Prediction Model
+Developed a machine learning model to predict students' academic
+performance based on features like attendance, study habits, and socio-
+economic factors. Experimented with multiple models, including Decision
+Trees and Random Forests, optimizing the model for accuracy and insights.
+
+  Page 3 of 5
+
+
+
+   
+
+Virtuals Protocol
+Open Source Contributor
+July 2024 - August 2024 (2 months)
+Virtual Protocol is at the forefront of blockchain technology, empowering
+gamers with democratic AI contributions. Our mission is to democratize AI
+across all gaming platforms, and we're gearing up for an exciting mainnet
+launch on Base chain.
+
+Role in Data Scraping Challenge:
+• 40+ Contributions
+• With the use of Ultimate Vocal Remover 5, removed background music/noise
+from the audio datasets.
+• Audio separation of different speakers using Playground-Deepgram available
+on Hugging Face developed by jessica07
+
+Learnasyougo
+Subject Matter Expert
+July 2023 - October 2023 (4 months)
+• Provide step-by-step solutions for the questions up to K12 grades
+• To provide solutions on a real-time doubt-solving platform within the specified
+time
+
+E-Cell, IIT Bombay
+Campus Executive
+July 2023 - October 2023 (4 months)
+Mumbai, Maharashtra, India
+• In charge of sharing information about the E-Summit event on my campus.
+• Helped with onboarding and registration of participants.
+
+MastersBuddy
+Campus Ambassador
+September 2023 - September 2023 (1 month)
+• Conducted case studies on competitive companies.
+• Provided content ideas after analyzing competitors’ strategies.
+
+Internshala
+Internshala Student Partner 
+August 2023 - September 2023 (2 months)
+
+SKOLAR
+  Page 4 of 5
+
+
+
+   
+
+Machine Learning with Data Science 
+March 2023 - May 2023 (3 months)
+Skills acquired during training:
+- Python
+- EDA
+- SQL
+- Machine Learning Algorithms
+
+Education
+Sharda University
+Bachelor of Technology - BTech, CSE with specialization in Data Science and
+Analytics · (2022 - 2026)
+
+St. Andrews Scots Sr. Sec. School
+Higher Senior Secondary (Class XII), Affiliated to CBSE Board, Science
+(PCM) · (2010 - 2022)
+
+  Page 5 of 5
