@@ -12,12 +12,7 @@ venv/
 .env.local
 .env.*.local
 
-# Model + cache directories (user will populate)
-models/
-!models/.keep
-
 # Temporary runtime outputs
-/tmp/
 *.log
 server_log.txt
 Wav2Lip/checkpoints/
@@ -31,9 +26,3 @@ Wav2Lip/temp/
 .DS_Store
 Thumbs.db
 
-# Embedded repositories
-SadTalker/
-
-# Personal data files (users should add their own)
-data/pope_face.jpg
-data/pope_ref.wav
